@@ -12,7 +12,7 @@
     listof=totoc,
     tocflat,
     pdftex,
-]{scrreprt}
+]{scrartcl}
 
 \usepackage{cmap}                       % Für ein durchsuchbares PDF
 \usepackage[T1]{fontenc}
@@ -71,6 +71,9 @@
 \newcommand{\BibTeX}{\bibtexlogo}   % Kompatiblität
 \makeatother
 
+% Titelseite Format
+\renewcommand*{\titlepagestyle}{empty}
+
 % Zitationen in Fußnoten erlauben
 \usepackage[round,authoryear,sort]{natbib}  % für Darstellung der Literaturverweise im Text
 
@@ -93,7 +96,7 @@
 % Literaturverzeichnis in Quellenverzeichnis umbenennen
 % entsprechend der gewählten Sprache
 \addto{\captionsngerman}{
-    \renewcommand{\bibname}{\strbibliography}       % statt "Literaturverzeichnis"
+    \renewcommand{\bibname}{Quellenverzeichnis}       % statt "Literaturverzeichnis"
     % \renewcommand{\figurename}{Abb.}              % Abbildung durch Abb. ersetzen
     % \renewcommand{\tablename}{Tab.}               % Tabelle durch Tab. ersetzen
 }%
