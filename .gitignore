@@ -15,4 +15,5 @@ x*.aux
 *.log
 *.bak
 *.lol
+.project
 src/paper.pdf
