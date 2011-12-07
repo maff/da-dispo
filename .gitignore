@@ -15,5 +15,6 @@ x*.aux
 *.log
 *.bak
 *.lol
+*.pdfsync
 .project
 src/paper.pdf
